@@ -20,6 +20,18 @@
 
 .perChoice {
   background-color: black;
-  font-size: 20px;
+  font-size: 50px;
   background-size: cover;
+  width: 250px;
+}
+
+.ans-btn {
+  width: 500px;
+  height: 50px;
+  font-size: x-large;
+}
+
+.endGame {
+  background-color: black;
+  color: whitesmoke;
 }

@@ -22,7 +22,7 @@ export default class Answer extends React.Component {
     render() {
         return (
             <div className="perChoice">
-                <button onClick={() => this.checkAnswer(this.props.answer)}>
+                <button className="ans-btn" onClick={() => this.checkAnswer(this.props.answer)}>
                     {this.props.answer}
                 </button>
             </div>

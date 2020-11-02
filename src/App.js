@@ -52,7 +52,7 @@ export default class App extends Component {
     return this.state.data.length > 0 ? (
       <div className="App">
         {this.state.index >= this.state.data.length ? (
-          <h1>Game Ended! Your score is {this.state.score}/{this.state.data.length}</h1>
+          <h1 className="endGame">Good game, your score is {this.state.score}/{this.state.data.length}!</h1>
         ) : (
           <Questions data={this.state.data[this.state.index]} score={this.state.score} handleScore={this.handleScore} handleIndex={this.handleIndex} handleShuffle={this.handleShuffle} shuffledAnswers={this.state.shuffledAnswers}/>
         )}
