@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style.css';
 
 export default class Answer extends React.Component {
     constructor(props) {
@@ -8,18 +9,12 @@ export default class Answer extends React.Component {
     }
 
     checkAnswer = (answer) => {
-        let corrected = (this.props.correctAnswer === answer);
-
-        if (corrected) {
+        if (this.props.correctAnswer === answer) {
             alert('Correct!');
             this.props.handleScore();
         } else {
             alert('Wrong! The correct answer is: '.concat(this.props.correctAnswer));
         }
-        
-        this.setState({
-            index: this.state.index + 1,
-        })
         this.props.handleIndex();
         this.props.handleShuffle();
     }

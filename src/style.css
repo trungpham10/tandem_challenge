@@ -1,14 +1,14 @@
 .Question {
-  color: blue;
+  color: whitesmoke;
 }
 
 .Answers {
   padding-top: 50px;
-  color: green;
+  margin-bottom: 10px;
 }
 
 .App {
-  background-color: hotpink;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,5 +19,7 @@
 }
 
 .perChoice {
-  background-color: khaki;
+  background-color: black;
+  font-size: 20px;
+  background-size: cover;
 }
