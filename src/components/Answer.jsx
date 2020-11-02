@@ -10,7 +10,7 @@ export default class Answer extends React.Component {
 
     checkAnswer = (answer) => {
         if (this.props.correctAnswer === answer) {
-            alert('Correct!');
+            alert('Correct! The correct answer is: '.concat(this.props.correctAnswer));
             this.props.handleScore();
         } else {
             alert('Wrong! The correct answer is: '.concat(this.props.correctAnswer));
