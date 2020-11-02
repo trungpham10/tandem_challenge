@@ -7,7 +7,6 @@ export default class App extends Component {
     fetch('/data.json')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         this.setState({
           data: data,
           shuffledAnswers: [data[0].correct, ...data[0].incorrect].sort(() => Math.random() - 0.5),
