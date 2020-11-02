@@ -1,0 +1,23 @@
+.Question {
+  color: blue;
+}
+
+.Answers {
+  padding-top: 50px;
+  color: green;
+}
+
+.App {
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-bottom: 500px;
+  font-size: xx-large;
+}
+
+.perChoice {
+  background-color: khaki;
+}
