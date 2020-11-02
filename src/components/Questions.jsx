@@ -10,23 +10,21 @@ export default class Questions extends Component {
         }
     }
 
-       
-
     render() {
         return (
-            <div className="App">
+            <div>
                 <div className="Question">
                     {this.props.data.question}
                 </div>
 
                 {this.state.shuffledAnswers ? (
                     <div className="Answers">
-                    <Answer answer={this.props.shuffledAnswers[0]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
-                    <Answer answer={this.props.shuffledAnswers[1]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
-                    <Answer answer={this.props.shuffledAnswers[2]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
-                    <Answer answer={this.props.shuffledAnswers[3]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
-                </div>
-                ) : (<div></div>)}
+                        <Answer answer={this.props.shuffledAnswers[0]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
+                        <Answer answer={this.props.shuffledAnswers[1]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
+                        <Answer answer={this.props.shuffledAnswers[2]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
+                        <Answer answer={this.props.shuffledAnswers[3]} correctAnswer={this.props.data.correct} handleScore={this.props.handleScore} handleIndex={this.props.handleIndex} handleShuffle={this.props.handleShuffle}/>
+                    </div>
+                ) : (<div>Loading</div>)}
                 
             </div>
         )

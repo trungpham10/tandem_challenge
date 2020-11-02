@@ -16,7 +16,7 @@ export default class Answer extends React.Component {
         } else {
             alert('Wrong! The correct answer is: '.concat(this.props.correctAnswer));
         }
-        // window.location.reload(true);
+        
         this.setState({
             index: this.state.index + 1,
         })
